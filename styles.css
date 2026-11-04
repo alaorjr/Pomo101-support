@@ -180,6 +180,12 @@ figcaption { margin-top: .75rem; font-size: var(--small); color: var(--muted); }
 .article section p { margin-top: 1.1rem; }
 .article strong { font-weight: 750; }
 
+.public-report-notice {
+  padding: .85rem 1rem;
+  border-radius: .75rem;
+  background: var(--surface);
+}
+
 .reference {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, .85fr);
