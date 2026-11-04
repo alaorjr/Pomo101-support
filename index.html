@@ -3,18 +3,72 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Suporte — Pomo101</title>
-  <style>
-    body { max-width: 720px; margin: 48px auto; padding: 0 20px; font: 17px/1.6 system-ui, sans-serif; color: #202124; }
-    h1 { line-height: 1.2; }
-    a { color: #c7352b; }
-  </style>
+  <meta name="theme-color" content="#0e0f1b">
+  <meta name="description" content="Encontre ajuda com o timer, as notificações, as Atividades ao Vivo e o histórico do Pomo101 para iPhone.">
+  <title>Suporte do Pomo101</title>
+  <link rel="icon" href="assets/icon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
 </head>
 <body>
-  <h1>Suporte do Pomo101</h1>
-  <p>O Pomo101 é um timer de foco com histórico local, notificações e Live Activities.</p>
-  <h2>Precisa de ajuda?</h2>
-  <p>Abra uma solicitação em <a href="https://github.com/alaorjr/Pomo101-support/issues">Pomo101 Support</a> com uma descrição do problema e a versão do iOS.</p>
-  <p><a href="privacy.html">Política de Privacidade</a></p>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="assets/icon.png" alt="" width="36" height="36">Pomo101</a>
+    <nav aria-label="Navegação principal">
+      <a href="index.html" aria-current="page">Suporte</a>
+      <a href="privacy.html">Privacidade</a>
+    </nav>
+  </header>
+
+  <main class="split" id="conteudo">
+    <section class="hero reading" aria-labelledby="titulo">
+      <h1 id="titulo" data-reveal>Suporte do<br>Pomo101</h1>
+      <p class="lead" data-reveal>Encontre ajuda para ajustar o timer, receber avisos e acompanhar suas sessões no iPhone.</p>
+      <a class="action" href="#perguntas" data-reveal>Ver perguntas <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <aside class="stage" aria-label="Prévia do Pomo101">
+      <figure class="preview" data-preview>
+        <div class="preview-controls" data-reveal role="group" aria-label="Escolher modo do timer" hidden>
+          <button type="button" aria-pressed="true" aria-controls="foco">Foco</button>
+          <button type="button" aria-pressed="false" aria-controls="pausa">Pausa</button>
+          <button type="button" aria-pressed="false" aria-controls="longa">Longa</button>
+        </div>
+        <div class="screen-stack" data-reveal>
+          <img class="screen is-current" id="foco" src="assets/focus.webp" width="660" height="1000" alt="Timer de Foco do Pomo101 com 25 minutos e anel coral.">
+          <img class="screen" id="pausa" src="assets/shortBreak.webp" width="660" height="1000" alt="Timer de Pausa do Pomo101 com 5 minutos e anel verde." aria-hidden="true">
+          <img class="screen" id="longa" src="assets/longBreak.webp" width="660" height="1000" alt="Timer de Pausa Longa do Pomo101 com 15 minutos e anel azul." aria-hidden="true">
+        </div>
+        <figcaption aria-live="polite" data-reveal>Foco · 25 min por padrão</figcaption>
+      </figure>
+    </aside>
+
+    <div class="reading article">
+      <section id="perguntas" aria-labelledby="perguntas-titulo">
+        <h2 id="perguntas-titulo" data-reveal>Perguntas frequentes</h2>
+        <p data-reveal><strong>Como começo uma sessão?</strong> Na aba <strong>Timer</strong>, escolha Foco, Pausa ou Longa e toque em <strong>Começar</strong>. Você pode pausar e retomar a sessão. Ao concluir um foco, o app seleciona a pausa curta. Para iniciá-la, toque em <strong>Começar</strong>.</p>
+        <p data-reveal><strong>Como ajusto os tempos e a meta?</strong> Toque no botão de ajustes na aba Timer. As durações padrão são 25 minutos de foco, 5 de pausa e 15 de pausa longa. Ali também é possível alterar a meta diária de sessões de foco, que começa em quatro.</p>
+        <p data-reveal><strong>Por que o aviso ficou sem som?</strong> Confira a permissão e os sons das notificações do Pomo101 nos Ajustes do iPhone. Nos ajustes do timer, confira a opção <strong>Som ao concluir</strong>.</p>
+        <p data-reveal><strong>Como vejo o timer com a tela bloqueada?</strong> As Atividades ao Vivo mostram a contagem na Tela Bloqueada e, em modelos compatíveis, na Dynamic Island. Confira se o recurso está permitido para o Pomo101 nos Ajustes do iPhone.</p>
+        <p data-reveal><strong>Onde ficam as sessões concluídas?</strong> Na aba <strong>Histórico</strong>, você pode ver as sessões por dia, semana ou mês. O histórico fica armazenado no iPhone.</p>
+      </section>
+
+      <figure class="reference">
+        <img src="assets/history.webp" width="660" height="1000" loading="lazy" data-reveal alt="Aba Histórico do Pomo101 com os filtros Dia, Semana e Mês.">
+        <figcaption data-reveal>Em <strong>Histórico</strong>, toque em Dia, Semana ou Mês para mudar o período.</figcaption>
+      </figure>
+
+      <section class="contact" aria-labelledby="contato">
+        <h2 id="contato" data-reveal>Fale com o suporte</h2>
+        <p data-reveal>Conte o que aconteceu e inclua o modelo do iPhone, a versão do iOS e os passos para reproduzir o problema. Os relatos no GitHub são públicos. Evite incluir informações pessoais.</p>
+        <a class="action" href="https://github.com/alaorjr/Pomo101-support/issues" data-reveal>Abrir suporte no GitHub <span aria-hidden="true">↗</span></a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p class="closing" data-reveal>Seu tempo, com intenção.</p>
+    <a href="privacy.html" data-reveal>Política de Privacidade <span aria-hidden="true">→</span></a>
+  </footer>
 </body>
 </html>
